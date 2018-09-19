@@ -60,19 +60,6 @@ export const getTodoList = (token) => (dispatch) => {
             todos:todos
         })
     })
-    // $.ajax({
-    //     url: "/api/todos",
-    //     type: "GET",
-    //     headers: {
-    //         Authorization: localStorage.token
-    //     },
-    //     success: todos => {
-    //         dispatch({
-    //             type: "RECEIVED_TODOS",
-    //             todos
-    //         });
-    //     }
-    // });
 }
 
 export const RegisterToServer =(name,password) =>(dispatch) =>{
@@ -107,7 +94,6 @@ export const LoginToServer =(name,password) =>(dispatch) =>{
        })
       .then(token => {
           localStorage.token=token;
-          console.log("LoginToServerToken",localStorage.token);
           //this.props.history.push("/todos");
            hashHistory.push("/todos");
         })

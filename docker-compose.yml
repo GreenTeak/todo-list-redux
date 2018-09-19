@@ -72,18 +72,18 @@ services:
     - "8082:8082"
     environment:
     - SPRING_PROFILES_ACTIVE=default
-  todo-list-redux:
-    image: greenteak1992/todo-list-redux:9
-    deploy:
-      replicas: 1
-      restart_policy:
-        delay: 10s
-    depends_on:
-      - user-service
-      - todo-service
-    networks:
-      todo:
-        aliases:
-          - todo-list-redux
-    ports:
-      - "3000:3000"
+#  todo-list-redux:
+#    image: greenteak1992/todo-list-redux:9
+#    deploy:
+#      replicas: 1
+#      restart_policy:
+#        delay: 10s
+#    depends_on:
+#      - user-service
+#      - todo-service
+#    networks:
+#      todo:
+#        aliases:
+#          - todo-list-redux
+#    ports:
+#      - "3000:3000"

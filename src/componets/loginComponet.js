@@ -4,6 +4,7 @@ import {LoginToServer, RegisterToServer} from "../actions/index"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './col-center-block.css'
 
+
 class Login extends Component {
   constructor() {
       super()
